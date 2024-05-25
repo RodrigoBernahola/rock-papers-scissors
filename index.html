@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+        let humanScore = 0;
+        let computerScore = 0;
+
+
+        function  getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function getComputerChoice() {
+            randomNumber = getRandomInt(3);
+            if (randomNumber === 0) {
+                return 'Rock';
+            }
+
+            else if (randomNumber === 1) {
+                return 'Paper'
+            }
+
+            else {
+                return 'Scissors'
+            }
+        }
+
+
+        let computerChoice = getComputerChoice();
+        console.log(computerChoice)
+
+        function getHumanChoice(number) {
+            if ( 0 < number  && number <= 2) {
+                if (number === 0){
+                    return 'Rock'
+                }
+                
+                else if (number === 1) {
+                    return 'Paper'
+                }
+
+                else {
+                    return 'Scissors'
+                }
+            }
+
+            else {
+                alert('El valor ingresado es incorrecto')
+            }
+        }
+
+        let numberHumanChoice = parseInt(prompt('Ingrese su opcion'))
+        let humanChoice = getHumanChoice(numberHumanChoice)
+        console.log(humanChoice)
+
+
+
+    </script>
+
+
+</body>
+</html>
