@@ -74,10 +74,6 @@ function playRound(humanChoice, computerChoice) {
     checkWinner();
 }
 
-function playGame() {
-    // Aquí podrías implementar la lógica de tu juego si es necesario
-}
-
 let menu = document.querySelector('#menu');
 let parrafoTexto = document.querySelector('#TextoResultado');
 let parrafoScore = document.querySelector('#Scores');
